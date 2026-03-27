@@ -43,4 +43,13 @@ Instead of copying code to Chromebook, use FREE instant hosting:
 
 ---
 
+## Auto-Push to GitHub (Every 30 Minutes)
+Every 30 minutes, run this in my workspace:
+```bash
+cd /root/.openclaw/workspace && git add . && git commit -m "Auto-commit" && git push
+```
+Skip if nothing new to commit.
+
+---
+
 *Last Updated: 2026-03-27 - After marathon session solving file transfer issue*
