@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Basketball</title></head>
+<body style="background:#0f172a;margin:0;padding:20px">
+<h1 style="color:#fbbf24">🏀 Basketball</h1>
+<canvas id="c" width="800" height="400" style="background:#B49860;border:5px solid #8B4513;display:block;margin:20px auto"></canvas>
+<script>
+var C=document.getElementById("c"),X=C.getContext("2d");
+function dc(){
+X.clearRect(0,0,800,400);
+X.lineWidth=3;X.strokeStyle="#fff";
+X.beginPath();X.arc(400,200,50,0,6.28);X.lineWidth=5;X.stroke();
+X.beginPath();X.moveTo(400,0);X.lineTo(400,400);X.lineWidth=4;X.stroke();
+X.strokeRect(0,150,150,100);X.strokeRect(0,130,150,140);
+X.fillStyle="rgba(128,0,128,0.3)";X.fillRect(-2,151,149,98);
+X.beginPath();X.arc(150,200,50,1.57,4.71,true);X.stroke();
+X.beginPath();X.arc(50,200,150,1.57,4.71,true);X.stroke();
+X.beginPath();X.moveTo(0,350);X.lineTo(50,350);X.stroke();
+X.beginPath();X.moveTo(0,50);X.lineTo(50,50);X.stroke();
+X.fillStyle="#fff";X.fillRect(10,155,8,90);
+X.beginPath();X.arc(50,200,12,0,6.28);X.strokeStyle="#ff6600";X.lineWidth=4;X.stroke();
+X.beginPath();X.arc(50,200,12,0,6.28);X.strokeStyle="#fff";X.lineWidth=2;X.stroke();
+X.fillStyle="#fff";X.fillRect(782,155,8,90);
+X.beginPath();X.arc(750,200,12,0,6.28);X.strokeStyle="#ff6600";X.lineWidth=4;X.stroke();
+X.beginPath();X.arc(750,200,12,0,6.28);X.strokeStyle="#fff";X.lineWidth=2;X.stroke();
+X.beginPath();X.arc(650,200,50,4.71,1.57,true);X.stroke();
+X.beginPath();X.arc(750,200,150,4.71,1.57,true);X.stroke();
+X.beginPath();X.moveTo(750,350);X.lineTo(800,350);X.stroke();
+X.beginPath();X.moveTo(750,50);X.lineTo(800,50);X.stroke();
+X.strokeRect(650,150,151,100);X.strokeRect(650,130,151,140);
+X.fillRect(652,151,149,98);
+}
+dc();
+</script></body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basketball Court - Phase 1</title>
+  <style>
+    body {margin:0;display:flex;justify-content:center;align-items:center;height:100vh;background:#222;}
+    #court {border:2px solid #fff;background:#006400;}
+    #toolbar {position:absolute;top:10px;left:10px;background:#fff;padding:5px;border-radius:4px;}
+    button {margin:2px;}
+  </style>
+</head>
+<body>
+<div id="toolbar">
+  <button id="toggleTeam">Team: Offense</button>
+  <button id="clear">Clear All</button>
+</div>
+<canvas id="court" width="800" height="450"></canvas>
+<script>
+  const canvas = document.getElementById('court');
+  const ctx = canvas.getContext('2d');
+  const width = canvas.width, height = canvas.height;
+
+  // simple court drawing (half‑court, three‑point line)
+  function drawCourt(){
+    ctx.fillStyle = '#006400';
+    ctx.fillRect(0,0,width,height);
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 2;
+    // center line
+    ctx.beginPath();
+    ctx.moveTo(width/2,0);
+    ctx.lineTo(width/2,height);
+    ctx.stroke();
+    // three‑point arc (approx)
+    ctx.beginPath();
+    ctx.arc(width/2, height/2, 200, Math.PI*1.5, Math.PI*0.5);
+    ctx.stroke();
+  }
+
+  class Player{
+    constructor(id,team,x,y){
+      this.id=id;this.team=team;this.x=x;this.y=y;this.r=15;
+    }
+    draw(){
+      ctx.beginPath();
+      ctx.arc(this.x,this.y,this.r,0,2*Math.PI);
+      ctx.fillStyle = this.team==='off' ? '#1e90ff' : '#ff8c00';
+      ctx.fill();
+      ctx.strokeStyle = '#000';
+      ctx.stroke();
+    }
+  }
+
+  let players=[];
+  let nextId=1;
+  let currentTeam='off'; // offense by default
+  const toggleBtn=document.getElementById('toggleTeam');
+  toggleBtn.onclick=()=>{
+    currentTeam = currentTeam==='off' ? 'def' : 'off';
+    toggleBtn.textContent = 'Team: ' + (currentTeam==='off'?'Offense':'Defense');
+  };
+  document.getElementById('clear').onclick=()=>{players=[];render();};
+
+  canvas.addEventListener('click',e=>{
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    players.push(new Player(nextId++, currentTeam, x, y));
+    render();
+  });
+
+  function render(){
+    ctx.clearRect(0,0,width,height);
+    drawCourt();
+    players.forEach(p=>p.draw());
+  }
+
+  // initial draw
+  render();
+</script>
+</body>
+</html>

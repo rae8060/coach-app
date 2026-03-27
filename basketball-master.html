@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Basketball</title>
+</head>
+<body style="background:#0f172a;margin:0;padding:20px">
+<h1 style="color:#fbbf24">🏀 Basketball</h1>
+<div style="display:flex;gap:10px;justify-content:center;margin:10px 0">
+<button id="bo" onclick="setT(1)" style="background:red;color:white;padding:12px">+ Offense</button>
+<button id="bd" onclick="setT(2)" style="background:black;color:white;padding:12px">+ Defense</button>
+<button id="bp" onclick="setT(3)" style="background:#fbbf24;color:black;padding:12px">Pass</button>
+<button id="be" onclick="executePlay()" style="background:#22c55e;color:white;padding:12px">Execute</button>
+<button id="bn" onclick="nextStep()" style="background:#3b82f6;color:white;padding:12px" disabled>Next</button>
+</div>
+<canvas id="c" width="800" height="400" style="background:#B49860;border:5px solid #8B4513;display:block;margin:20px auto"></canvas>
+<div id="s" style="color:white;text-align:center;font-size:18px">O1 starts with ball!</div>
+<div id="q" style="color:#fbbf24;text-align:center;margin-top:10px">Queue: 0</div>
+<script>
+var C=document.getElementById("c"),X=C.getContext("2d"),P=[],T=0,d=null,nextO=1,nextD=1,ballHolder=null,firstBallHolder=null,passStep=0,queue=[],stepIndex=-1,startPositions=null;
+
+function dc(){
+X.clearRect(0,0,800,400);
+X.lineWidth=3;X.strokeStyle="#fff";
+X.beginPath();X.arc(400,200,50,0,6.28);X.lineWidth=5;X.stroke();
+X.beginPath();X.moveTo(400,0);X.lineTo(400,400);X.lineWidth=4;X.stroke();
+X.strokeRect(0,150,150,100);X.strokeRect(0,130,150,140);
+X.fillStyle="rgba(128,0,128,0.3)";X.fillRect(-2,151,149,98);
+X.beginPath();X.arc(150,200,50,1.57,4.71,true);X.stroke();
+X.beginPath();X.arc(50,200,150,1.57,4.71,true);X.stroke();
+X.beginPath();X.moveTo(0,350);X.lineTo(50,350);X.stroke();
+X.beginPath();X.moveTo(0,50);X.lineTo(50,50);X.stroke();
+// LEFT SIDE - Backboard then hoop
+X.fillStyle="#fff";X.fillRect(10,155,8,90);
+X.beginPath();X.arc(50,200,12,0,6.28);X.strokeStyle="#ff6600";X.lineWidth=4;X.stroke();
+X.beginPath();X.arc(50,200,12,0,6.28);X.strokeStyle="#fff";X.lineWidth=2;X.stroke();
+// RIGHT SIDE - Backboard then hoop  
+X.fillStyle="#fff";X.fillRect(782,155,8,90);
+X.beginPath();X.arc(750,200,12,0,6.28);X.strokeStyle="#ff6600";X.lineWidth=4;X.stroke();
+X.beginPath();X.arc(750,200,12,0,6.28);X.strokeStyle="#fff";X.lineWidth=2;X.stroke();
+// Rest of court
+X.beginPath();X.arc(650,200,50,4.71,1.57,true);X.stroke();
+X.beginPath();X.arc(750,200,150,4.71,1.57,true);X.stroke();
+X.beginPath();X.moveTo(750,350);X.lineTo(800,350);X.stroke();
+X.beginPath();X.moveTo(750,50);X.lineTo(800,50);X.stroke();
+X.strokeRect(650,150,151,100);X.strokeRect(650,130,151,140);
+X.fillRect(652,151,149,98);
+}
+
+function dp(){
+P.forEach(function(p){
+var n=p.t==="o"?p.n:"D"+p.n;
+var hasBall=ballHolder&&ballHolder.n===p.n&&ballHolder.t===p.t;
+X.beginPath();X.arc(p.x,p.y,18,0,6.28);X.fillStyle=p.t==="o"?"red":"black";X.fill();
+X.strokeStyle=hasBall?"#fbbf24":p.t==="o"?"red":"black";X.lineWidth=hasBall?4:2;X.stroke();
+X.fillStyle="#fff";X.font="bold 14px Arial";X.textAlign="center";X.fillText(n,p.x,p.y);
+if(hasBall){X.beginPath();X.arc(p.x+12,p.y-12,8,0,6.28);X.fillStyle="#fbbf24";X.fill();X.strokeStyle="#000";X.lineWidth=1;X.stroke()}
+});
+}
+
+function setT(t){T=t;passStep=0}
+
+function getPlayer(x,y){return P.find(function(p){var dx=p.x-x,dy=p.y-y;return dx*dx+dy*dy<400})}
+
+function updateQueue(){document.getElementById("q").innerText="Queue: "+queue.length}
+
+function defenseReact(){
+var defenders=P.filter(function(p){return p.t==="d"});
+if(defenders.length==0)return;
+var ballPlayer=P.find(function(p){return p.n===ballHolder.n&&p.t===ballHolder.t});
+if(!ballPlayer)return;
+var nearest=null,minDist=Infinity;
+defenders.forEach(function(def){
+var dx=def.x-ballPlayer.x,dy=def.y-ballPlayer.y,dist=Math.sqrt(dx*dx+dy*dy);
+if(dist<minDist){minDist=dist;nearest=def}});
+if(nearest){nearest.x=nearest.x+(ballPlayer.x-nearest.x)*0.5;nearest.y=nearest.y+(ballPlayer.y-nearest.y)*0.5;document.getElementById("s").innerText="D"+nearest.n+" slides!"}
+}
+
+C.onclick=function(e){
+var r=C.getBoundingClientRect(),x=(e.clientX-r.left)*800/r.width,y=(e.clientY-r.top)*400/r.height;
+var clicked=getPlayer(x,y);
+if(T===1&&!clicked){var newP={x:x,y:y,t:"o",n:nextO++};P.push(newP);if(nextO===2){ballHolder={n:newP.n,t:newP.t};firstBallHolder={n:newP.n,t:newP.t};startPositions=P.map(function(p){return{x:p.x,y:p.y,t:p.t,n:p.n}})}};dc();dp();document.getElementById("s").innerText=nextO===2?"O1 has ball!":"Offense added"}
+else if(T===2&&!clicked){if(!startPositions)startPositions=P.map(function(p){return{x:p.x,y:p.y,t:p.t,n:p.n}});P.push({x:x,y:y,t:"d",n:nextD++});dc();dp();document.getElementById("s").innerText="Defense added"}
+else if(T===3&&clicked){
+if(passStep===0){passStep=1;document.getElementById("s").innerText="PASS - receiver"}
+else if(passStep===1){
+queue.push({from:{n:ballHolder.n,t:ballHolder.t},to:{n:clicked.n,t:clicked.t}});
+ballHolder={n:clicked.n,t:clicked.t};
+passStep=0;
+dc();dp();
+defenseReact();
+updateQueue()}}
+else if(T===3&&!clicked&&passStep===1){passStep=0}
+};
+C.onmousedown=function(e){var r=C.getBoundingClientRect(),x=(e.clientX-r.left)*800/r.width,y=(e.clientY-r.top)*400/r.height;d=getPlayer(x,y)};
+C.onmousemove=function(e){if(d){var r=C.getBoundingClientRect();d.x=(e.clientX-r.left)*800/r.width;d.y=(e.clientY-r.top)*400/r.height;dc();dp();}};
+C.onmouseup=function(){if(d){d=null;dc();dp();}};
+
+function executePlay(){
+if(queue.length===0||!firstBallHolder){document.getElementById("s").innerText="Need players and passes!";return}
+stepIndex=0;
+P=P.map(function(p){return{x:p.x,y:p.y,t:p.t,n:p.n}});
+ballHolder={n:firstBallHolder.n,t:firstBallHolder.t};
+document.getElementById("be").disabled=true;
+document.getElementById("bn").disabled=false;
+dc();dp();
+document.getElementById("s").innerText="Press NEXT"
+}
+
+function nextStep(){
+if(stepIndex<queue.length){
+ballHolder={n:queue[stepIndex].to.n,t:queue[stepIndex].to.t};
+dc();dp();
+defenseReact();
+document.getElementById("s").innerText="Step "+(stepIndex+1)+"/"+queue.length+": O"+ballHolder.n;
+stepIndex++;
+}else{
+document.getElementById("s").innerText="Play done!";document.getElementById("be").disabled=false;document.getElementById("bn").disabled=true;queue=[];updateQueue();stepIndex=-1}
+}
+
+dc();dp();
+</script>
+</body>
+</html>
