@@ -57,6 +57,33 @@
 
 ---
 
+## Mike's Growth & Learning Capabilities
+
+### Already Working
+- Web search & browsing
+- Image analysis (analyze pics user sends)
+- PDF reading
+- Code writing & execution
+- File management
+- Telegram + Discord messaging
+- Canvas (display UI)
+- Voice (TTS)
+
+### Can Add (Need API Keys)
+1. Image Generation (DALL-E) - Generate basketball play images
+2. More AI Models (Claude, Mistral, etc.)
+3. Browser Control - Automate web tasks
+
+### How to Add
+- Get API key from provider
+- Give to Mike: "Save this: [key]"
+- Mike adds as new provider (never overwrites)
+
+### Goal
+Build Mike into a powerful AI assistant that can see, speak, generate images, and help coach basketball!
+
+---
+
 ## ⭐ SAVED THIS SESSION
 
 ### Telegram Setup
