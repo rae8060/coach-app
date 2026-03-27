@@ -164,4 +164,46 @@
 
 ---
 
+## 🤖 AI Capabilities (General - March 27, 2026)
+
+### What AI Can Do NOW (2025-2026):
+1. **Text/Code** - Generate code, write, debug, explain
+2. **Images** - Create images from text, edit, iterate
+3. **Voice** - Speech-to-speech, real-time voice agents
+4. **Multimodal** - Combine text, images, video, audio
+
+### Latest AI Tools & Capabilities:
+- **GPT-5.2-Codex** - Code generation, review, repo-scale reasoning
+- **GPT Image 1.5** - Higher-fidelity image generation
+- **Real-time voice** - Low-latency speech-to-speech
+- **Multimodal AI** - Integrates images, video, code, audio, text
+
+### AI Voice Trends:
+- Real-time multilingual communication
+- Personalized AI voices
+- 25% reduction in agent escalations
+- 30% of AI models now using multiple modalities
+
+### Best AI Productivity Tools (2025):
+- ChatGPT (general AI)
+- Grammarly (writing)
+- Midjourney (images)
+- ElevenLabs (voice)
+- Coda (docs + database + AI)
+- Zapier (automation)
+- Writer (brand consistency)
+
+### Open Source AI Options:
+- Stable Diffusion (images)
+- Ollama (local AI)
+- Self-hosted options available
+
+### Why This Matters for Us:
+- AI can help with coaching, teaching, analyzing
+- Voice AI could read drills to players
+- Image AI could generate play diagrams
+- We can build AI-powered tools for basketball
+
+---
+
 *Last Updated: March 27, 2026*
