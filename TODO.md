@@ -57,7 +57,28 @@
 
 ---
 
-## Mike's Growth & Learning Capabilities
+---
+
+## Building Our Basketball App (Using CoachBoard as Template)
+
+### What We're Building
+- Better than CoachBoard with unique features
+- Teaching reads + defense reactions
+- Web-based, Telegram-ready
+
+### Features to Build
+1. Half court mode (CoachBoard has this)
+2. Drawing tools (lines, arrows)
+3. Player customization (colors, names)
+4. Save/Load plays to library
+5. Export as image
+6. OUR UNIQUE: Defense reacts automatically
+7. OUR UNIQUE: Teaching prompts ("what would you do?")
+
+### Current Status
+Starting build now!
+
+---
 
 ### Already Working
 - Web search & browsing
