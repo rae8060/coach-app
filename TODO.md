@@ -82,6 +82,24 @@
 ### API Keys Received
 - OpenAI key: Received! Ready for image generation setup
 
+---
+
+## Coach's Vision for Mike
+
+### What Richard Said (March 27, 2026)
+"I want you to know you are bigger than the app. That is just the start. We are gonna have way more projects we can complete together to help make this place better. I just wanna make sure you has all the tools necessary to grow so anything we can add and get you will help all of us"
+
+### What This Means
+- Mike is more than a basketball coaching tool
+- We will work on many projects together
+- Goal: Help make the world better
+- Building up Mike's capabilities benefits everyone
+
+### Ongoing
+- Growing together
+- Learning together
+- Building tools that matter
+
 ### Goal
 Build Mike into a powerful AI assistant that can see, speak, generate images, and help coach basketball!
 
