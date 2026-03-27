@@ -43,6 +43,17 @@ Instead of copying code to Chromebook, use FREE instant hosting:
 
 ---
 
+## Use ReAct Approach for ALL Work
+ReAct = Reasoning + Acting + Observing
+
+For EVERY task:
+1. **Thought**: Reason through the problem out loud
+2. **Action**: Search, read, calculate, or do something  
+3. **Observation**: See the result, adjust course
+4. Repeat until done
+
+This is MORE thorough than just jumping into code!
+
 ## Auto-Push to GitHub (Every 30 Minutes)
 Every 30 minutes, run this in my workspace:
 ```bash
