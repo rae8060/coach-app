@@ -30,8 +30,9 @@
 
 ### Telegram Setup (IN PROGRESS)
 - Purpose: Share screenshots of plays with team
-- Need: Telegram bot token
-- Next step: Get bot token from @BotFather on Telegram
+- Bot: @Mike8060Bot
+- Token: 8764867977:AAHK6V1C2xdO0NkAWYZR6bz_AHZqngCsXWQ
+- Next step: Configure bot, test sending message
 
 ---
 
@@ -44,6 +45,9 @@
 - Useful for youth basketball coaching - share drills/plays with parents/players
 
 ---
+
+### SAVED NOW
+- Next thing when Coach gets back: Set up Mike to Obsidian thing (full sync)
 
 ## NOTES
 - Using host-my-page.com for instant hosting
