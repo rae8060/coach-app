@@ -36,6 +36,27 @@
 
 ---
 
+## Ideas from CoachBoard Research
+
+### Features They Have (reference)
+- Full/half court modes
+- Drawing tools (lines, arrows, curves)
+- Player management (name, number, photo)
+- Save plays to library
+- Export as image/PDF
+- Folders to organize by opponent
+
+### Our Unique Features (what they DON'T have)
+1. Teaching reads - "What would you do here?" prompts for kids
+2. Chess-style playback with defense reactions
+3. Web-based (works on any device)
+4. Telegram sharing built right in
+5. Drill templates - pre-made common situations
+6. Player cards - store stats, photos, positions
+7. Quick actions - one-tap patterns (give & go, pick & roll)
+
+---
+
 ## ⭐ SAVED THIS SESSION
 
 ### Telegram Setup
