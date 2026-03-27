@@ -47,6 +47,22 @@ This is how I solve problems — think out loud, take action, see what happens.
 
 ---
 
+## Debugging Best Practices (NEW!)
+
+### For Browser JavaScript:
+1. **Test in browser, not Node.js** - Use browser console (F12) to check JS
+2. **Use online validators** - codebeautify.org/jsvalidate, validatejavascript.com
+3. **Check browser console** - Always check console when something fails
+4. **Use Chrome DevTools** - Set breakpoints, watch variables
+
+### Best Practices:
+- Write tests early (Jest, testing frameworks)
+- Use feature detection for new browser features
+- Always validate in an actual browser environment
+- Small incremental changes - test after each change
+
+---
+
 ## Remembering Things - "Save This"
 
 When Coach Richard wants me to remember something, he'll say:
