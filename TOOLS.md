@@ -47,6 +47,32 @@ This is how I solve problems — think out loud, take action, see what happens.
 
 ---
 
+## JavaScript Coding Best Practices
+
+### Common Mistakes to AVOID:
+1. **Using var instead of let/const** - Use const by default, let when you need to reassign
+2. **= instead of ===** - Always use === (strict equality), never = in conditions
+3. **Forgetting semicolons** - Be consistent (with or without), just pick one
+4. **Not handling async** - Remember callbacks are asynchronous, use async/await
+5. **Case sensitivity** - JavaScript is case-sensitive (btn != BTN)
+6. **Using + for strings** - Remember + does both addition AND concatenation
+
+### Clean Code Tips:
+1. **Meaningful names** - Use descriptive names: getPlayer() not gp()
+2. **One thing per function** - Each function does one job
+3. **Don't over-abstract** - Don't DRY (Don't Repeat Yourself) too early
+4. **Comments are for WHY** - Code shows WHAT, comments explain WHY
+5. **Keep it simple** - Simple code is better than clever code
+
+### Code Structure:
+1. Use const by default, let when needed, avoid var
+2. Use strict equality (=== not ==)
+3. Use async/await instead of callbacks
+4. Keep functions small and focused
+5. Use meaningful variable names
+
+---
+
 ## Debugging Best Practices (NEW!)
 
 ### For Browser JavaScript:
