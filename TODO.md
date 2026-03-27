@@ -76,7 +76,10 @@
 7. OUR UNIQUE: Teaching prompts ("what would you do?")
 
 ### Current Status
-Starting build now!
+✅ Half court mode added! (March 27, 6:18 PM)
+- Toggle button added
+- Can switch between full and half court
+- Working copy: basketball.html
 
 ---
 
@@ -144,3 +147,13 @@ Build Mike into a powerful AI assistant that can see, speak, generate images, an
 - Richard on Chromebook at /home/rae8060
 - Auto-push to GitHub every 30 minutes
 - We work one step at a time! 🏀
+
+---
+
+## Lessons Learned (March 27, 2026)
+
+### Debugging Lesson
+- Don't trust Node.js validation for browser JS - test in browser instead
+- Have user test code early and often instead of debugging locally
+- Make smaller, incremental changes to avoid introducing bugs
+- If something works before, don't overcomplicate it with big edits

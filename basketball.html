@@ -20,50 +20,36 @@
 <script>
 var C=document.getElementById("c"),X=C.getContext("2d"),P=[],T=0,d=null,nextO=1,nextD=1,ballHolder=null,firstBallHolder=null,passStep=0,queue=[],stepIndex=-1,startPositions=null,halfCourt=false;
 
-function dc(){
-X.clearRect(0,0,800,400);
-if(halfCourt){
- // Half court - right side only
- X.lineWidth=3;X.strokeStyle="#fff";
- X.strokeRect(400,50,400,300);
- X.beginPath();X.arc(750,200,50,4.71,1.57,true);X.stroke();
- X.beginPath();X.arc(750,200,150,4.71,1.57,true);X.stroke();
- X.beginPath();X.moveTo(750,350);X.lineTo(800,350);X.stroke();
- X.beginPath();X.moveTo(750,50);X.lineTo(800,50);X.stroke();
- X.strokeRect(650,150,151,100);X.strokeRect(650,130,151,140);
- X.fillStyle="rgba(128,0,128,0.3)";X.fillRect(652,151,149,98);
- X.fillStyle="#fff";X.fillRect(785,170,5,60);
- X.beginPath();X.arc(750,200,12,0,6.28);X.fillStyle="#ff6600";X.fill();X.strokeStyle="#fff";X.lineWidth=2;X.stroke();
- // Half court line
- X.beginPath();X.moveTo(400,50);X.lineTo(400,350);X.lineWidth=4;X.stroke();
-}else{
- // Full court
- X.lineWidth=3;X.strokeStyle="#fff";
- X.beginPath();X.arc(400,200,50,0,6.28);X.lineWidth=5;X.stroke();
- X.beginPath();X.moveTo(400,0);X.lineTo(400,400);X.lineWidth=4;X.stroke();
- X.strokeRect(0,150,150,100);X.strokeRect(0,130,150,140);
- X.fillStyle="rgba(128,0,128,0.3)";X.fillRect(-2,151,149,98);
- X.beginPath();X.arc(150,200,50,1.57,4.71,true);X.stroke();
- X.beginPath();X.arc(50,200,150,1.57,4.71,true);X.stroke();
- X.beginPath();X.moveTo(0,350);X.lineTo(50,350);X.stroke();
- X.beginPath();X.moveTo(0,50);X.lineTo(50,50);X.stroke();
- X.fillStyle="#fff";X.fillRect(10,170,5,60);
- X.beginPath();X.arc(50,200,12,0,6.28);X.fillStyle="#ff6600";X.fill();X.strokeStyle="#fff";X.lineWidth=2;X.stroke();
- X.beginPath();X.arc(650,200,50,4.71,1.57,true);X.stroke();
- X.beginPath();X.arc(750,200,150,4.71,1.57,true);X.stroke();
- X.beginPath();X.moveTo(750,350);X.lineTo(800,350);X.stroke();
- X.beginPath();X.moveTo(750,50);X.lineTo(800,50);X.stroke();
- X.strokeRect(650,150,151,100);X.strokeRect(650,130,151,140);
- X.fillRect(652,151,149,98);
- X.fillStyle="#fff";X.fillRect(785,170,5,60);
- X.beginPath();X.arc(750,200,12,0,6.28);X.fillStyle="#ff6600";X.fill();X.strokeStyle="#fff";X.lineWidth=2;X.stroke();
-}
+function toggleHalf(){
+halfCourt=!halfCourt;
+document.getElementById("bh").style.background=halfCourt?"#22c55e":"#8b5cf6";
+dc();dp();
 }
 
-function toggleHalf(){
- halfCourt=!halfCourt;
- document.getElementById("bh").style.background=halfCourt?"#22c55e":"#8b5cf6";
- dc();dp();
+function dc(){
+X.clearRect(0,0,800,400);
+X.lineWidth=3;X.strokeStyle="#fff";
+X.beginPath();X.arc(400,200,50,0,6.28);X.lineWidth=5;X.stroke();
+X.beginPath();X.moveTo(400,0);X.lineTo(400,400);X.lineWidth=4;X.stroke();
+X.strokeRect(0,150,150,100);X.strokeRect(0,130,150,140);
+X.fillStyle="rgba(128,0,128,0.3)";X.fillRect(-2,151,149,98);
+X.beginPath();X.arc(150,200,50,1.57,4.71,true);X.stroke();
+X.beginPath();X.arc(50,200,150,1.57,4.71,true);X.stroke();
+X.beginPath();X.moveTo(0,350);X.lineTo(50,350);X.stroke();
+X.beginPath();X.moveTo(0,50);X.lineTo(50,50);X.stroke();
+X.fillStyle="#fff";X.fillRect(10,170,5,60);
+X.beginPath();X.arc(50,200,12,0,6.28);X.fillStyle="#ff6600";X.fill();X.strokeStyle="#fff";X.lineWidth=2;X.stroke();
+X.beginPath();X.arc(650,200,50,4.71,1.57,true);X.stroke();
+X.beginPath();X.arc(750,200,150,4.71,1.57,true);X.stroke();
+X.beginPath();X.moveTo(750,350);X.lineTo(800,350);X.stroke();
+X.beginPath();X.moveTo(750,50);X.lineTo(800,50);X.stroke();
+X.strokeRect(650,150,151,100);X.strokeRect(650,130,151,140);
+X.fillRect(652,151,149,98);
+X.fillStyle="#fff";X.fillRect(785,170,5,60);
+X.beginPath();X.arc(750,200,12,0,6.28);X.fillStyle="#ff6600";X.fill();X.strokeStyle="#fff";X.lineWidth=2;X.stroke();
+if(halfCourt==true){
+X.beginPath();X.moveTo(400,50);X.lineTo(400,350);X.lineWidth=4;X.stroke();
+}
 }
 
 function dp(){
