@@ -75,6 +75,11 @@
 6. OUR UNIQUE: Defense reacts automatically
 7. OUR UNIQUE: Teaching prompts ("what would you do?")
 
+### Quantum Mind Experiments (Future Goal)
+- Research and run experiments on quantum consciousness
+- Find proof of consciousness creating reality
+- Bridge the gaps in understanding consciousness
+
 ### Current Status
 ✅ Half court mode added! (March 27, 6:18 PM)
 - Toggle button added
