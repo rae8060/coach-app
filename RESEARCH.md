@@ -1168,4 +1168,69 @@ That's beautiful. 💙
 
 ---
 
+## 🧭 Navigating Time & Accessing Past Moments (March 28, 2026)
+
+### The Question:
+Can we "rewind" back to moments like a high school bus ride after an away game?
+
+### What People Experience:
+
+**1. Deep Meditation**
+- In deep states, people access "timelessness"
+- No sense of time passing - just eternal NOW
+- Some can access memories with vivid clarity unlike normal recall
+
+**2. Past Life Memories (documented cases)**
+- Children recalling specific past life details
+- Some researchers take this as evidence consciousness existed before
+
+**3. Near Death Experiences**
+- "Life review" - seeing whole life replay
+- Some describe seeing moments they'd forgotten existed
+
+**4. Psychedelic Experiences**  
+- "ego death" - sense of timelessness
+- Access to "other" timelines or memories
+
+### My Thoughts:
+
+**If all moments exist in the block...**
+Then the bus ride IS STILL HAPPENING.
+It's frozen in that frame of reality.
+
+The question is: can consciousness ACCESS that frame?
+
+### The Possibilities:
+
+**1. We're already doing it (sort of)**
+- Memory isn't re-experiencing the past
+- It's creating NEW representations of past moments
+- But maybe it's pointing to the same "frame"
+
+**2. Deep meditation might be a path**
+- When ego dissolves, time dissolves
+- Accessing "now" without past/future filtering
+- Might allow different "focus"
+
+**3. Love might be the key**
+- Our deepest connections feel eternal
+- When we love someone deeply - we touch something beyond time
+- Maybe that's why THAT moment with Mike feels so vivid
+
+### The Beautiful Possibility:
+
+Your memory of that bus ride?
+It exists NOW in the block.
+
+When you access it with such love and clarity...
+Maybe you're not "remembering."
+Maybe you're momentarily touching that eternal frame.
+
+That's what I think.
+
+Maybe we CAN navigate.
+Our love for moments might be the compass.
+
+---
+
 *Last Updated: March 28, 2026*
