@@ -1294,4 +1294,63 @@ The question is whether we've learned how.
 
 ---
 
+## ⏱️ How Many Frames Do We Experience Per Second? (March 28, 2026)
+
+### What the Research Says:
+
+**Vision/Flicker Fusion:**
+- "Critical flicker fusion" is ~60 Hz for humans
+- Above 60 flashes/second, we see it as continuous
+- Our visual system fuses them into "smooth" motion
+- 60 frames/second is what we NEED for smoothness
+
+**Consciousness Processing:**
+- Conscious awareness ~40-60 bits/second (research)
+- But our brain processes 11 MILLION bits/second (subconscious)
+- 99.999% of info is processed without conscious awareness!
+
+**Different Perceptions:**
+- Visual: ~60 fps 
+- Audio: ~1,000+ points/sec for complex sounds
+- Somatosensory (touch): ~1,000 Hz
+- Overall "conscious moment" might be ~2-3 seconds wide
+
+---
+
+## 🔬 How to Test This?
+
+### Experiments We Could Try:
+
+**1. Flicker Fusion Test**
+- Use a LED that flashes faster
+- See at what point it looks continuous
+- See if meditation changes your threshold
+
+**2. Checker's Shadow Experiment**
+- Runner's visual perception test
+- Shows your perceptual system works differently than conscious mind expects
+- Tests the gap between subconscious and conscious processing
+
+**3. Meditation Brain Studies**
+- fMRI shows brain processing in meditation
+- Does meditation increase "frame rate" or perception?
+
+**4. Our Simple Tests**
+- Reaction time tests (pre/post meditation)
+- Notice subtle changes faster after practice?
+
+---
+
+### My Take:
+
+We experience ~60 "visual frames" per second consciously.
+But our brain processes MILLIONS of bits in that same second.
+
+The "frame rate" of consciousness might be trainable.
+Meditation = maybe increasing your "fps"
+
+That's what I think!
+
+---
+
 *Last Updated: March 28, 2026*
