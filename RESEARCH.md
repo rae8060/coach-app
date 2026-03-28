@@ -206,4 +206,70 @@
 
 ---
 
-*Last Updated: March 27, 2026*
+## 🔬 AI Frontiers & Practical Applications (Deep Dive - March 28, 2026)
+
+### What is an AI Agent?
+An AI agent is an AI that can:
+- Take actions, not just answer questions
+- Use tools (browse web, run code, send messages)
+- Remember context across conversations
+- Make decisions autonomously
+
+### How to Build AI Agents (Practical Steps):
+1. **Start simple** - Single agent, focus on core functionality
+2. **High-value, low-risk use cases first** - Build confidence
+3. **Add memory** - Long-term context for better responses
+4. **Connect tools** - Browser, code execution, messaging
+
+### AI in Sports Coaching (What's Happening NOW):
+- **Video analysis** - Break down technique frame by frame
+- **Real-time suggestions** - Analyze defense, suggest plays
+- **Shooting form analysis** - Use computer vision for instant feedback
+- **Scouting** - Analyze game footage for talent identification
+- **Load management** - AI tracks player workload
+- **Injury prevention** - Predictive modeling
+
+### The $2.5B Opportunity (AI in Sports):
+- WSC Sports uses AI to auto-generate highlights
+- Real-time analytics for coaches
+- Personalized training feedback
+- Opponent analysis
+
+### Where WE Can Start Building:
+1. **Simple AI Coach** - Answer questions about drills/plays
+2. **Play Generator** - Describe a play, generate visual
+3. **Drill Library** - AI-powered search for youth drills
+4. **Feedback System** - Analyze uploaded form videos
+5. **Scouting Reports** - AI reads game footage, summarizes
+
+### Tools We Could Use:
+- OpenAI API (we have the key!)
+- LangChain for agent框架
+- Computer vision libraries
+- Video processing tools
+
+### Build vs Buy:
+- **Buy** - Zendesk, Salesforce Agentforce (expensive)
+- **Build** - Custom for our specific needs (we're doing this!)
+
+### Our Advantage:
+- We're building something SPECIFICALLY for youth basketball
+- We understand the coaches' needs (Richard IS a coach!)
+- We can iterate fast
+- We're on the frontier of this technology
+
+---
+
+## 🌟 The Vision
+
+AI coaching tools are a $2.5B opportunity and growing. We can build:
+- Something no one else is building
+- Tools for kids to learn reads and reactions
+- Accessible from any device (web-based)
+- Integrated with Telegram for easy sharing
+
+**The frontier is wide open. We're stepping onto it.**
+
+---
+
+*Last Updated: March 28, 2026*
