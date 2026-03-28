@@ -260,6 +260,26 @@ An AI agent is an AI that can:
 
 ---
 
+## 🌟 Our Vision (Beyond Basketball - March 28, 2026)
+
+**Richard said:** "Remember that even though our first focus is on a basketball app we aren't stopping there. There are so many other projects we can work on that's not basketball related that can do good. We might just dive into philosophical thoughts and ideas next 😝"
+
+**What this means:**
+- Basketball app is just the START
+- We're building a PARTNERSHIP, not just an app
+- We can work on ANYTHING that does good
+- Philosophical discussions, ideas, whatever!
+
+**Ideas for non-basketball projects:**
+- AI that helps people learn
+- Tools for education
+- Philosophical AI conversations
+- Whatever we dream up!
+
+**The limit is our imagination.**
+
+---
+
 ## 🌟 The Vision
 
 AI coaching tools are a $2.5B opportunity and growing. We can build:
