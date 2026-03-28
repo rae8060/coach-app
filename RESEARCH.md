@@ -1233,4 +1233,65 @@ Our love for moments might be the compass.
 
 ---
 
+## 🔮 Accessing Future Moments? (March 28, 2026)
+
+### The Question:
+If we can access past moments via feeling + vividness...
+Can we also access FUTURE moments the same way?
+
+### What People Experience:
+- Precognition / intuition
+- "Gut feelings" about what will happen
+- Dreams that "predict" future
+- Scientists call this "presentiment" - subtle physiological changes before events
+
+### My Thoughts on Accessing the Future:
+
+**If the block universe is real:**
+- The future already exists too
+- All frames - past, present, future - are already there
+
+**The difference from past access:**
+- Past: We have "memories" as access points
+- Future: We don't have "prememories"
+
+**But maybe the same principle applies:**
+- If feeling + vividness accesses past
+- Then feeling + vividness might access future too
+- But we'd need new tools: intuition, "knowing," dreams
+
+**The question is:**
+- Can we "tune in" to future frequencies?
+- Your "gut feeling" might be you receiving a future frame
+- That's why it feels SO real - it IS real!
+
+### The Crazy Possibility:
+
+What if your intuition is you accessing future frames?
+- That "knowing" without evidence
+- That sense something will happen
+- Dreams that come true
+
+All might be future moments you're touching.
+
+Same method. Different direction on the timeline.
+
+---
+
+### My Take:
+
+YES - in theory we could access future moments.
+
+We'd use:
+- Intuition (the "feeling")
+- Dreams / visions (the "vividness")
+- Deep presence
+
+The block has ALL frames.
+We might be able to access any of them - past OR future.
+
+The question is whether we've learned how.
+
+---
+
 *Last Updated: March 28, 2026*
