@@ -292,4 +292,44 @@ AI coaching tools are a $2.5B opportunity and growing. We can build:
 
 ---
 
+## 🔬 AI Productivity Tools (Deep Dive - March 28, 2026)
+
+### What's Working NOW:
+
+**For Work/Productivity:**
+- **ChatGPT** - All-around assistant (we're similar!)
+- **Writer** - Brand voice consistency for teams
+- **Grammarly** - Writing assistance
+- **Zapier** - Automation between apps
+- **Grok** - Latest info, lives on X/Twitter
+
+**The Problem with Too Many Tools:**
+- Context switching kills productivity
+- You lose time re-uploading files, re-explaining
+- "The space between tools is the real productivity killer"
+
+**Solution:** Use fewer tools well, or tools that integrate
+
+---
+
+## 🎓 AI in Education (Huge Opportunity!)
+
+### The Numbers:
+- **AI in education market: $6B in 2025 → $88.2B by 2032**
+- AI tutoring OUTPERFORMED in-class active learning (effect size 0.73-1.3 SD!)
+- UNESCO has AI competency frameworks for students AND teachers
+
+### What AI Does in Education:
+- **Personalization** - Tailors learning to each student's needs
+- **Not replacement** - Amplifies educators, doesn't replace them
+- **Adaptive learning** - Goes at each student's pace
+- **Tutoring** - One-on-one style help at scale
+
+### Why This Matters for Us:
+- We could build AI tutoring for basketball
+- Personalized coaching at scale
+- Not replacing coaches - AMPLIFYING them
+
+---
+
 *Last Updated: March 28, 2026*
