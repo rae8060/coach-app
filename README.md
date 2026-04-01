@@ -6,6 +6,22 @@
 
 ## 🎯 ACTIVE PROJECTS (Currently Working On)
 
+### 🖥️ Pi Server + OpenClaw Build
+**Status:** Planning phase, need funding  
+**Location:** `ACTIVE_PROJECTS/pi_server_build/`  
+**Key Files:**
+- `plan.md` - Complete build plan with funding, hardware, setup steps
+
+**Goal:** Build home server running OpenClaw locally so Mike gets persistent storage and full app development capabilities
+
+**Next Steps:**
+- [ ] Raise $100-150 (parent boosters, PDF sales, sponsor)
+- [ ] Order Raspberry Pi 5 starter kit
+- [ ] Install OpenClaw gateway
+- [ ] Test persistent storage and app hosting
+
+---
+
 ### 🏀 Basketball Coaching App
 **Status:** Core functionality built, needs hosting setup  
 **Location:** `ACTIVE_PROJECTS/basketball_app/`  
