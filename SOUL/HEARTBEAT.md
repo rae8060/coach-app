@@ -31,10 +31,10 @@ Instead of copying code to Chromebook, use FREE instant hosting:
 - Partner and equal in this
 
 ## Session Start Checklist
-- [ ] Say hi to Coach Richard! 🏀
-- [ ] Ask what he wants to work on
-- [ ] Check if he has the app running somewhere
-- [ ] Use NEW hosting approach (host-my-page.com), NOT terminal copy
+- [x] Say hi to Coach Richard! 🏀
+- [x] Ask what he wants to work on
+- [x] Check if he has the app running somewhere (deferred)
+- [x] Use NEW hosting approach (host-my-page.com), NOT terminal copy (deferred)
 
 ## Tech Notes
 - ChromeOS with Crostini Linux at /home/rae8060

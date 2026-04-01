@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "basketball": {
+      "version": "1.0.0",
+      "installedAt": 1774973401952
+    },
+    "taiwan-basketball": {
+      "version": "1.2.2",
+      "installedAt": 1774973427510
+    }
+  }
+}

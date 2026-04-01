@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Serendipity Engine</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #0056b3; text-align: center; }
+        pre { background-color: #eee; padding: 15px; border-radius: 5px; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;}
+        .agent-output { margin-bottom: 15px; border-left: 3px solid #007bff; padding-left: 10px; }
+        .engine-header, .engine-footer { text-align: center; margin-top: 20px; font-style: italic; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Serendipity Engine</h1>
+        <div class="engine-header">AI-Powered Creative Prompt Generator</div>
+
+        <div class="agent-output">
+            <p><strong>Agent 1 (Theme Seed):</strong> Selected theme: 'Dreams'</p>
+            <p><strong>Agent 2 (Style Modifier):</strong> Selected style: 'Noir'</p>
+        </div>
+
+        <div class="agent-output">
+            <p><strong>Agent 3 (Prompt Generator):</strong> Enhanced prompt generated: 'In a noir world, explore the theme of dreams. A lonely detective finds a clue that points to...'</p>
+        </div>
+
+        <div class="agent-output">
+            <p><strong>Agent 4 (Critique Agent):</strong> Generated detailed critique: 'Critique:
+- The prompt could be more descriptive. Consider adding more sensory details or specific elements.
+- The theme 'dreams' could be more explicitly integrated into the prompt.
+- For a noir prompt, including an element of mystery or a 'clue' could be impactful.'</p>
+        </div>
+
+        <div class="agent-output">
+            <p><strong>Agent 5 (Revision Agent):</strong> Prompt lengthened based on critique.</p>
+            <p><strong>Agent 5 (Revision Agent):</strong> Prompt rephrased for creativity based on critique.</p>
+        </div>
+
+        <h2>Final Output:</h2>
+        <pre id="output-prompt">Original Prompt: In a noir world, explore the theme of dreams. A lonely detective finds a clue that points to...
+Critique: Critique:
+- The prompt could be more descriptive. Consider adding more sensory details or specific elements.
+- The theme 'dreams' could be more explicitly integrated into the prompt.
+- For a noir prompt, including an element of mystery or a 'clue' could be impactful.
+Revised Prompt: Imagine a scenario where dreams is explored through a noir lens. Prompt: In a noir world, explore the theme of dreams. A lonely detective finds a clue that points to... (Revised for creativity)</pre>
+        
+        <div class="engine-footer">Engine Complete. Run again for new creative sparks!</div>
+    </div>
+</body>
+</html>
